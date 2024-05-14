@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relative Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- text Views for label -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send To:"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+    <!-- Edit text for email id -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email address" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Edit text for email subject -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email body:"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"  />
+    <!-- Edit text for email body -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:lines="10"
+        android:gravity="start"
+        android:hint="  Type your message here"/>
+
+
+
+    <!-- Button to send email -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Send email"
+        android:textSize="26dp"/>
+</LinearLayout>
